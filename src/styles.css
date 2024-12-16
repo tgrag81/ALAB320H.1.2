@@ -1,7 +1,7 @@
 /* Use a border only on the left side of the page's <html> element. It should have a width of 5px and a color of lightgray.
 Set the <body> element's min-height to be at least 100% of the viewport height. Also, use the font-family property to set the entire page to use sans-serif fonts.
 Give the <body> a max-width of 1000px and center it on the page with the margin auto technique.
-The border is too close to our text and we've got an issue with margin-collapse at the top of the page! Add padding to the <header>, <main> and <footer> elements of 1rem on the top and bottom and 2rem on the left and right to fix these issues.
+The border is too close to our text and we'vmye got an issue with margin-collapse at the top of the page! Add padding to the <header>, <main> and <footer> elements of 1rem on the top and bottom and 2rem on the left and right to fix these issues.
 For the <h1> on the page we want the color to be tomato.
 Set all of the images to have a width of 100%.
 For your site navigation, you'll need to remove all of the padding on the <ul> elements and then set it's list-style-type to none. It would be a good idea to use a class to style the navigation so that you can still make a bulleted list on your page. Use Flexbox to style the <ul> for the navigation elements. On the top navigation use the space-between rule to have the menu items spread across their container evenly. Set the color for the anchors inside the main navigation to be lightgray and the footer navigation to be tomato.
@@ -27,7 +27,6 @@ html {
     padding: 1rem 2rem;
   }
   
-  /* Header */
   h1 {
     color: tomato;
   }
@@ -36,7 +35,6 @@ html {
     color: gray;
   }
   
-  /* Navigation */
   ul {
     padding: 0;
     list-style-type: none;
@@ -62,7 +60,6 @@ html {
     text-decoration: none;
   }
   
-  /* Blog Posts */
   article {
     margin-bottom: 4rem;
     border-bottom: 1px solid lightgray;
@@ -86,13 +83,58 @@ html {
     text-decoration: none;
   }
   
-  /* Images */
   img {
     width: 100%;
   }
-  
-  /* Footer */
-  footer p {
+    footer p {
     color: lightgray;
   }
   
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+}
+
+.date {
+    color: #333;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.content p {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.dropcap {
+    font-size: 3em;
+    float: left;
+    line-height: 1;
+    margin-right: 8px;
+    color: #555;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
